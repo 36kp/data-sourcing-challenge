@@ -36,12 +36,27 @@ Follow instructions below to run this program
 > NOTE: Following setup and commands are tested in macOS Sonoma 14.5 only
 
 ### Pre-requisites
-- Dev environment setup using [Anaconda](https://www.anaconda.com/download).
-- Make sure that following commands are recognized
-    - `python --version`
-    - `git --version`
-    - `jupyter --version`
+- **Anaconda** (recommended for environment management)
+- **Homebrew** (for installing dependencies)
+- Python 3.x
+- Pandas library
+- NASA API key (`NASA_API_KEY`) set in your environment
 
+Install Anaconda and set up your environment:
+
+```bash
+# Install Anaconda using Homebrew
+brew install --cask anaconda
+
+# Create a new environment (optional but recommended)
+conda create -n cme_gst_analysis python=3.9
+
+# Activate the environment
+conda activate cme_gst_analysis
+
+# Install necessary libraries
+conda install pandas
+```
 ## Usage
 - Checkout git repository using git clone
 `git clone https://github.com/36kp/data-sourcing-challenge.git`
